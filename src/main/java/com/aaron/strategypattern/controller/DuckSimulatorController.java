@@ -1,5 +1,6 @@
 package com.aaron.strategypattern.controller;
 
+import com.aaron.strategypattern.model.Duck;
 import com.aaron.strategypattern.service.DuckSimulatorService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,8 +14,8 @@ public class DuckSimulatorController {
     DuckSimulatorController(DuckSimulatorService duckSimulatorService) {
         this.duckSimulatorService = duckSimulatorService;
     }
-    @GetMapping("/{type}")
-    public String simulateDuck(@PathVariable String type) {
-        return duckSimulatorService.simulate(type);
+    @GetMapping("/{type}/{action}")
+    public String simulateDuck(@PathVariable String type, @PathVariable String action) {
+        return duckSimulatorService.simulate(type, action);
     }
 }

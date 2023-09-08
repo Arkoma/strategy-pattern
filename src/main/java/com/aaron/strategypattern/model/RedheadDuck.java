@@ -12,9 +12,6 @@ public class RedheadDuck extends Duck {
 
     @Override
     public String display() {
-        return "I ama Readhead Duck. \n" +
-                "And, " + this.swim() + "\n" +
-                "And, " + this.performFly() + "\n" +
-                "And, " + this.performQuack();
+        return "I ama Readhead Duck.";
     }
 }

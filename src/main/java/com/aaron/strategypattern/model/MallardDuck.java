@@ -12,9 +12,6 @@ public class MallardDuck extends Duck {
 
     @Override
     public String display() {
-        return "I am a Mallard Duck. \n" +
-                "And, " + this.swim() + "\n" +
-                "And, " + this.performFly() + "\n" +
-                "And, " + this.performQuack();
+        return "I am a Mallard Duck.";
     }
 }

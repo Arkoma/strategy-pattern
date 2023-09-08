@@ -12,9 +12,6 @@ public class RubberDuck extends Duck {
 
     @Override
     public String display() {
-        return "I am a rubber duck. \n" +
-                "And, " + this.swim() + "\n" +
-                "And, " + this.performFly() + "\n" +
-                "And, " + this.performQuack();
+        return "I am a rubber duck.";
     }
 }

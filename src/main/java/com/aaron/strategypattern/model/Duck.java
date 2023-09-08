@@ -3,6 +3,9 @@ package com.aaron.strategypattern.model;
 import com.aaron.strategypattern.strategy.fly.FlyBehavior;
 import com.aaron.strategypattern.strategy.quack.QuackBehavior;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Duck {
     FlyBehavior flyBehavior;
 
@@ -20,6 +23,6 @@ public abstract class Duck {
     public String performQuack() { return quackBehavior.quack(); }
 
     public String swim() {
-        return "all ducks swim, even decoys. ";
+        return "All ducks swim, even decoys.";
     }
 }
